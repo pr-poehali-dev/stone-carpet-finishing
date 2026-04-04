@@ -382,7 +382,7 @@ const Index = () => {
 
               <div className="flex flex-col gap-5">
                 {[
-                  { icon: 'Phone', label: 'Телефон', value: '+7 (999) 000-00-00' },
+                  { icon: 'Phone', label: 'Телефон', value: '+7 (964) 847-75-91' },
                   { icon: 'Mail', label: 'Email', value: 'info@stone-carpet.ru' },
                   { icon: 'MapPin', label: 'Офис', value: 'Москва, ул. Каменная, 1' },
                   { icon: 'Clock', label: 'Режим работы', value: 'Пн–Сб, 9:00–19:00' },
