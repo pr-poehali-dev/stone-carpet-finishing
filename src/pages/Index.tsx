@@ -382,7 +382,7 @@ const Index = () => {
 
               <div className="flex flex-col gap-5">
                 {[
-                  { icon: 'Phone', label: 'Телефон', value: '+7 (964) 847-75-91' },
+                  { icon: 'Phone', label: 'Телефон', value: '+7 (964) 847-75-01' },
                   { icon: 'Mail', label: 'Email', value: 'stroyvsaratov@yandex.ru' },
                   { icon: 'MapPin', label: 'Офис', value: 'Краснодар' },
                   { icon: 'Clock', label: 'Режим работы', value: 'Пн–Сб, 9:00–19:00' },
