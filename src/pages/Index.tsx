@@ -384,7 +384,7 @@ const Index = () => {
                 {[
                   { icon: 'Phone', label: 'Телефон', value: '+7 (964) 847-75-91' },
                   { icon: 'Mail', label: 'Email', value: 'info@stone-carpet.ru' },
-                  { icon: 'MapPin', label: 'Офис', value: 'Москва, ул. Каменная, 1' },
+                  { icon: 'MapPin', label: 'Офис', value: 'Краснодар' },
                   { icon: 'Clock', label: 'Режим работы', value: 'Пн–Сб, 9:00–19:00' },
                 ].map((c, i) => (
                   <div key={i} className="flex items-start gap-4">
