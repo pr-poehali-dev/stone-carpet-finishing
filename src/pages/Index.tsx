@@ -175,7 +175,7 @@ const Index = () => {
             <div className="inline-flex items-center gap-3 mb-8">
               <div className="w-10 h-px" style={{ background: 'var(--gold)' }} />
               <span className="text-xs font-golos tracking-[0.3em] uppercase" style={{ color: 'var(--gold)' }}>
-                Эксклюзивные покрытия из натурального камня
+                Краснодар и Краснодарский край
               </span>
             </div>
           </div>
@@ -188,7 +188,7 @@ const Index = () => {
 
           <p className="max-w-lg font-golos text-lg leading-relaxed mb-10 animate-fade-up"
             style={{ animationDelay: '0.5s', opacity: 0, color: 'rgba(255,255,255,0.55)' }}>
-            Создаём уникальные покрытия из натурального камня для интерьеров и экстерьеров премиум-класса.
+            Создаём уникальные покрытия из натурального камня для интерьеров и экстерьеров в Краснодаре и по всему Краснодарскому краю.
             Каждый проект — произведение природы и мастерства.
           </p>
 
@@ -253,7 +253,7 @@ const Index = () => {
               </h2>
             </div>
             <p className="max-w-xs font-golos text-sm leading-relaxed" style={{ color: 'rgba(26,22,18,0.5)' }}>
-              Более 500 реализованных проектов по всей России и СНГ
+              Работаем в Краснодаре, Сочи, Анапе и по всему Краснодарскому краю
             </p>
           </div>
 
