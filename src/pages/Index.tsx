@@ -23,6 +23,11 @@ const portfolioItems = [
   { id: 4, title: 'Цоколь здания', area: '60 м²', material: 'Кварцит микс', img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/b87a4234-faa1-49d7-bb2e-67e61e3fd155.jpg', span: 'col-span-2' },
   { id: 5, title: 'Терраса под навесом', area: '85 м²', material: 'Речная галька', img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/7c5a8a6d-374b-4a7c-a71b-aa0a12df4d7e.jpg', span: '' },
   { id: 6, title: 'Прогулочная зона', area: '120 м²', material: 'Натуральный камень', img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/ecb47df4-f238-47c6-a746-fd3bc98aab03.jpg', span: '' },
+  { id: 7, title: 'Крыльцо с мраморной крошкой', area: '18 м²', material: 'Мраморная крошка', img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/f0e90815-c5a9-4f28-8c36-88c378b4529c.jpg', span: 'col-span-2' },
+  { id: 8, title: 'Подпорная стена из крошки', area: '24 м²', material: 'Мраморная крошка', img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/73f07ea8-eca2-4174-87c8-c4647e52b8f7.jpg', span: '' },
+  { id: 9, title: 'Ступени с алюминиевым профилем', area: '15 м²', material: 'Резиновая крошка', img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/5c8bd888-3079-4fbf-9a7e-d9c4662a706a.jpg', span: '' },
+  { id: 10, title: 'Пол на кухне', area: '22 м²', material: 'Резиновая крошка', img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/84f0779a-1ecc-4c2e-a316-13f87d0eabe9.png', span: 'col-span-2' },
+  { id: 11, title: 'Широкое крыльцо', area: '30 м²', material: 'Мраморная крошка', img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/51f503e0-6869-4576-a6cf-7610630945b8.jpg', span: '' },
 ];
 
 const galleryItems = [
@@ -32,6 +37,11 @@ const galleryItems = [
   { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/b87a4234-faa1-49d7-bb2e-67e61e3fd155.jpg', label: 'Кварцит микс', sub: 'Цоколи и фасады' },
   { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/7c5a8a6d-374b-4a7c-a71b-aa0a12df4d7e.jpg', label: 'Речная галька', sub: 'Террасы и площадки' },
   { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/e4381f1f-af60-44b6-8e31-a1b97beef331.jpg', label: 'Натуральный камень', sub: 'Любые поверхности' },
+  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/f0e90815-c5a9-4f28-8c36-88c378b4529c.jpg', label: 'Мраморная крошка', sub: 'Крыльцо с лестницей' },
+  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/73f07ea8-eca2-4174-87c8-c4647e52b8f7.jpg', label: 'Мраморная крошка', sub: 'Подпорная стена' },
+  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/5c8bd888-3079-4fbf-9a7e-d9c4662a706a.jpg', label: 'Резиновая крошка', sub: 'Ступени с профилем' },
+  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/84f0779a-1ecc-4c2e-a316-13f87d0eabe9.png', label: 'Резиновая крошка', sub: 'Напольное покрытие' },
+  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/51f503e0-6869-4576-a6cf-7610630945b8.jpg', label: 'Мраморная крошка', sub: 'Широкое крыльцо' },
 ];
 
 const stats = [
