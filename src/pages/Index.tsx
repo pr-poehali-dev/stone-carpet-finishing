@@ -17,21 +17,21 @@ function useReveal() {
 
 // ─── Data ───────────────────────────────────────────────────
 const portfolioItems = [
-  { id: 1, title: 'Терраса загородного дома', area: '48 м²', material: 'Мрамор Travertino', color: '#8B7355', span: 'col-span-2 row-span-2' },
-  { id: 2, title: 'Бассейн VIP-комплекса', area: '120 м²', material: 'Гранит Nero', color: '#2C2420', span: '' },
-  { id: 3, title: 'Лобби бизнес-центра', area: '200 м²', material: 'Известняк Crema', color: '#C9A96E', span: '' },
-  { id: 4, title: 'Спа-зона отеля 5★', area: '85 м²', material: 'Оникс White', color: '#D4C5A9', span: 'col-span-2' },
-  { id: 5, title: 'Въездная аллея усадьбы', area: '300 м²', material: 'Базальт Black', color: '#3A3530', span: '' },
-  { id: 6, title: 'Детская площадка', area: '65 м²', material: 'Кварцит Rainbow', color: '#B85C38', span: '' },
+  { id: 1, title: 'Обрамление бассейна', area: '32 м²', material: 'Мраморная крошка', img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/e4381f1f-af60-44b6-8e31-a1b97beef331.jpg', span: 'col-span-2 row-span-2' },
+  { id: 2, title: 'Отмостка дома', area: '48 м²', material: 'Серый гранит', img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/ecb47df4-f238-47c6-a746-fd3bc98aab03.jpg', span: '' },
+  { id: 3, title: 'Крыльцо и ступени', area: '12 м²', material: 'Тёмный базальт', img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/2d89b172-e7fb-4198-b27a-98f6f5b47924.jpg', span: '' },
+  { id: 4, title: 'Цоколь здания', area: '60 м²', material: 'Кварцит микс', img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/b87a4234-faa1-49d7-bb2e-67e61e3fd155.jpg', span: 'col-span-2' },
+  { id: 5, title: 'Терраса под навесом', area: '85 м²', material: 'Речная галька', img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/7c5a8a6d-374b-4a7c-a71b-aa0a12df4d7e.jpg', span: '' },
+  { id: 6, title: 'Прогулочная зона', area: '120 м²', material: 'Натуральный камень', img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/ecb47df4-f238-47c6-a746-fd3bc98aab03.jpg', span: '' },
 ];
 
 const galleryItems = [
-  { hue: '#8B7355', label: 'Travertino Romano', sub: 'Натуральная теплота' },
-  { hue: '#C9A96E', label: 'Gold Desert', sub: 'Золото пустыни' },
-  { hue: '#4A3728', label: 'Dark Walnut', sub: 'Глубокий шоколад' },
-  { hue: '#B85C38', label: 'Terra Rossa', sub: 'Тосканская терракота' },
-  { hue: '#D4C5A9', label: 'Crema Marfil', sub: 'Классический крем' },
-  { hue: '#2C2420', label: 'Nero Assoluto', sub: 'Абсолютный чёрный' },
+  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/e4381f1f-af60-44b6-8e31-a1b97beef331.jpg', label: 'Мраморная крошка', sub: 'Обрамление бассейнов' },
+  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/ecb47df4-f238-47c6-a746-fd3bc98aab03.jpg', label: 'Серый гранит', sub: 'Отмостки и дорожки' },
+  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/2d89b172-e7fb-4198-b27a-98f6f5b47924.jpg', label: 'Тёмный базальт', sub: 'Крыльцо и ступени' },
+  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/b87a4234-faa1-49d7-bb2e-67e61e3fd155.jpg', label: 'Кварцит микс', sub: 'Цоколи и фасады' },
+  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/7c5a8a6d-374b-4a7c-a71b-aa0a12df4d7e.jpg', label: 'Речная галька', sub: 'Террасы и площадки' },
+  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/e4381f1f-af60-44b6-8e31-a1b97beef331.jpg', label: 'Натуральный камень', sub: 'Любые поверхности' },
 ];
 
 const stats = [
@@ -261,12 +261,14 @@ const Index = () => {
               <div key={item.id}
                 className={`reveal group relative overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-[1.02] ${item.span}`}
                 style={{ borderRadius: '4px' }}>
-                <div className="absolute inset-0 transition-transform duration-700 group-hover:scale-110">
-                  <StoneTexture color={item.color} size={item.span.includes('col-span-2') ? 14 : 8} />
-                </div>
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
                 <div className="absolute inset-0"
-                  style={{ background: 'linear-gradient(to top, rgba(26,22,18,0.92) 0%, rgba(26,22,18,0.2) 60%, transparent 100%)' }} />
-                <div className="absolute bottom-0 left-0 right-0 p-5 transition-transform duration-300">
+                  style={{ background: 'linear-gradient(to top, rgba(26,22,18,0.92) 0%, rgba(26,22,18,0.15) 60%, transparent 100%)' }} />
+                <div className="absolute bottom-0 left-0 right-0 p-5">
                   <p className="font-golos text-xs mb-1" style={{ color: 'var(--gold)' }}>{item.material}</p>
                   <h3 className="font-oswald font-semibold text-white text-xl leading-tight">{item.title}</h3>
                   <div className="flex items-center gap-2 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -330,12 +332,14 @@ const Index = () => {
             {galleryItems.map((item, i) => (
               <div key={i} className="reveal group relative overflow-hidden cursor-pointer"
                 style={{ borderRadius: '4px', aspectRatio: '1' }}>
-                <div className="absolute inset-0 transition-transform duration-700 group-hover:scale-110">
-                  <StoneTexture color={item.hue} size={10} />
-                </div>
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-400"
+                <img
+                  src={item.img}
+                  alt={item.label}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                   style={{ background: 'linear-gradient(to top, rgba(26,22,18,0.95) 0%, rgba(26,22,18,0.3) 60%, transparent 100%)' }} />
-                <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-3 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-350">
+                <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-3 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
                   <h3 className="font-oswald font-semibold text-white text-xl">{item.label}</h3>
                   <p className="font-golos text-sm mt-1" style={{ color: 'rgba(255,255,255,0.6)' }}>{item.sub}</p>
                 </div>
