@@ -77,6 +77,7 @@ const Index = () => {
   const [formData, setFormData] = useState({ name: '', phone: '', area: '', material: '', room: '', comment: '' });
   const [formStep, setFormStep] = useState(1);
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
 
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
@@ -533,15 +534,28 @@ const Index = () => {
                           ← Назад
                         </button>
                         <button
-                          onClick={() => { if (formData.name && formData.phone) setSubmitted(true); }}
+                          onClick={async () => {
+                            if (!formData.name || !formData.phone || sending) return;
+                            setSending(true);
+                            try {
+                              await fetch('https://functions.poehali.dev/1e2c13fb-6e3e-48c1-b2d2-2051e94be181', {
+                                method: 'POST',
+                                headers: { 'Content-Type': 'application/json' },
+                                body: JSON.stringify(formData),
+                              });
+                            } finally {
+                              setSending(false);
+                              setSubmitted(true);
+                            }
+                          }}
                           className="flex-1 py-3.5 font-oswald font-medium tracking-widest uppercase text-sm transition-all active:scale-95"
                           style={{
                             background: formData.name && formData.phone ? 'var(--gold)' : 'rgba(201,169,110,0.25)',
                             color: 'var(--dark)',
                             borderRadius: '4px',
-                            cursor: formData.name && formData.phone ? 'pointer' : 'default'
+                            cursor: formData.name && formData.phone && !sending ? 'pointer' : 'default'
                           }}>
-                          Отправить заявку
+                          {sending ? 'Отправляем...' : 'Отправить заявку'}
                         </button>
                       </div>
                     </div>
