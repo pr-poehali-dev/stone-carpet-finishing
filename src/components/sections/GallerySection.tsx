@@ -1,17 +1,11 @@
 import Icon from '@/components/ui/icon';
 
 const galleryItems = [
-  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/e4381f1f-af60-44b6-8e31-a1b97beef331.jpg', label: 'Мраморная крошка', sub: 'Обрамление бассейнов' },
-  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/ecb47df4-f238-47c6-a746-fd3bc98aab03.jpg', label: 'Серый гранит', sub: 'Отмостки и дорожки' },
-  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/2d89b172-e7fb-4198-b27a-98f6f5b47924.jpg', label: 'Тёмный базальт', sub: 'Крыльцо и ступени' },
-  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/b87a4234-faa1-49d7-bb2e-67e61e3fd155.jpg', label: 'Кварцит микс', sub: 'Цоколи и фасады' },
-  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/7c5a8a6d-374b-4a7c-a71b-aa0a12df4d7e.jpg', label: 'Речная галька', sub: 'Террасы и площадки' },
-  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/e4381f1f-af60-44b6-8e31-a1b97beef331.jpg', label: 'Натуральный камень', sub: 'Любые поверхности' },
-  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/f0e90815-c5a9-4f28-8c36-88c378b4529c.jpg', label: 'Мраморная крошка', sub: 'Крыльцо с лестницей' },
-  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/73f07ea8-eca2-4174-87c8-c4647e52b8f7.jpg', label: 'Мраморная крошка', sub: 'Подпорная стена' },
-  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/5c8bd888-3079-4fbf-9a7e-d9c4662a706a.jpg', label: 'Резиновая крошка', sub: 'Ступени с профилем' },
-  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/84f0779a-1ecc-4c2e-a316-13f87d0eabe9.png', label: 'Резиновая крошка', sub: 'Напольное покрытие' },
-  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/51f503e0-6869-4576-a6cf-7610630945b8.jpg', label: 'Мраморная крошка', sub: 'Широкое крыльцо' },
+  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/5a720f68-4850-4556-915c-eb8c6bae78fc.jpg', label: 'Мрамор', sub: 'Мрамор' },
+  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/3da74af8-bdcb-47e9-bbf6-5aa7591a0f7e.jpg', label: 'Змеевик', sub: 'Змеевик' },
+  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/f3fc68e6-9d2e-435b-9b64-c34b2723d6d0.jpg', label: 'Галька', sub: 'Галька' },
+  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/e6621930-7081-4ed4-ab7b-4137183b5c9d.jpg', label: 'Кварцит', sub: 'Кварцит' },
+  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/71d37538-065b-4dab-9506-81147443c518.jpg', label: 'Гранит', sub: 'Гранит' },
 ];
 
 interface GallerySectionProps {
