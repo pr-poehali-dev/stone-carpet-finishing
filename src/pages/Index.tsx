@@ -280,7 +280,6 @@ const Index = () => {
                 <div className="absolute inset-0"
                   style={{ background: 'linear-gradient(to top, rgba(26,22,18,0.92) 0%, rgba(26,22,18,0.15) 60%, transparent 100%)' }} />
                 <div className="absolute bottom-0 left-0 right-0 p-5">
-                  <p className="font-golos text-xs mb-1" style={{ color: 'var(--gold)' }}>{item.material}</p>
                   <h3 className="font-oswald font-semibold text-white text-xl leading-tight">{item.title}</h3>
                   <div className="flex items-center gap-2 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <Icon name="Maximize2" size={12} />
