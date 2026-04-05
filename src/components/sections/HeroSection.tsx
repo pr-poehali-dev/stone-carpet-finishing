@@ -147,7 +147,7 @@ export default function HeroSection({ scrollTo }: HeroSectionProps) {
                   style={{ background: 'rgba(201,169,110,0.1)', borderRadius: '4px' }}>
                   <Icon name={f.icon} fallback="Star" size={18} style={{ color: 'var(--gold)' }} />
                 </div>
-                <h4 className="font-oswald font-semibold text-white">{f.title}</h4>
+                <h3 className="font-oswald font-semibold text-white">{f.title}</h3>
                 <p className="font-golos text-sm mt-1" style={{ color: 'rgba(255,255,255,0.45)' }}>{f.desc}</p>
               </div>
             ))}
