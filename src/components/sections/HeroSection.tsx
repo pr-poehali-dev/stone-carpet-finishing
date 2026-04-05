@@ -112,8 +112,8 @@ export default function HeroSection({ scrollTo }: HeroSectionProps) {
       {/* ── MARQUEE ── */}
       <div className="py-3.5 overflow-hidden" style={{ background: 'var(--gold)' }}>
         <div className="flex animate-marquee whitespace-nowrap">
-          {['Мрамор', 'Гранит', 'Известняк', 'Кварцит', 'Базальт', 'Оникс', 'Травертин', 'Яшма',
-            'Мрамор', 'Гранит', 'Известняк', 'Кварцит', 'Базальт', 'Оникс', 'Травертин', 'Яшма'].map((m, i) => (
+          {['Мрамор', 'Гранит', 'Галька', 'Кварцит', 'Змеевик', 'Яшма',
+            'Мрамор', 'Гранит', 'Галька', 'Кварцит', 'Змеевик', 'Яшма'].map((m, i) => (
             <span key={i} className="font-oswald font-medium text-sm tracking-[0.25em] uppercase mx-8"
               style={{ color: 'var(--dark)' }}>
               {m} <span style={{ opacity: 0.35 }} className="mx-3">◆</span>

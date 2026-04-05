@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Icon from '@/components/ui/icon';
 
-const materialOptions = ['Мрамор', 'Гранит', 'Известняк', 'Кварцит', 'Базальт', 'Оникс'];
+const materialOptions = ['Мрамор', 'Гранит', 'Галька', 'Кварцит', 'Змеевик', 'Яшма'];
 const roomOptions = ['Терраса / балкон', 'Бассейн / водоём', 'Лобби / офис', 'Жилая зона', 'Въезд / дорожки', 'Другое'];
 
 interface ContactsSectionProps {
