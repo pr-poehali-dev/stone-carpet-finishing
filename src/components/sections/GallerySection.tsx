@@ -16,6 +16,7 @@ const galleryItems = [
   { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/11db93d2-cda0-42fa-87c4-7c401e16df98.jpg', label: 'Мраморная крошка', sub: 'Мрамор' },
   { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/a8c5dc4d-3d71-4281-9b5c-eb89d9bbee7b.jpg', label: 'Галька речная', sub: 'Галька' },
   { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/baa80225-fe90-42a5-b9ea-3652e411ec7f.jpg', label: 'Щебень терракот', sub: 'Щебень' },
+  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/b811b4ae-6e6e-4ec4-93ce-017c8d876b3a.jpg', label: 'Образцы материалов', sub: 'Коллекция' },
 ];
 
 interface GallerySectionProps {
