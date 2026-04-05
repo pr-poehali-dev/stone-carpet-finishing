@@ -11,6 +11,11 @@ const galleryItems = [
   { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/95669c90-18e9-4170-9226-da1984485f47.jpg', label: 'Галька', sub: 'Галька' },
   { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/754a094e-3c0e-4f5f-9270-014e0d3110f8.jpg', label: 'Яшма', sub: 'Яшма' },
   { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/21673b8d-9128-4b8b-8580-6109b4c44d58.jpg', label: 'Гранит', sub: 'Гранит' },
+  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/2bc6d249-008a-44c2-88be-7085c80ecf88.jpg', label: 'Щебень чёрно-белый', sub: 'Щебень' },
+  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/013c1a38-d9a1-43b1-8380-e2179263a665.jpg', label: 'Галька бежевая', sub: 'Галька' },
+  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/11db93d2-cda0-42fa-87c4-7c401e16df98.jpg', label: 'Мраморная крошка', sub: 'Мрамор' },
+  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/a8c5dc4d-3d71-4281-9b5c-eb89d9bbee7b.jpg', label: 'Галька речная', sub: 'Галька' },
+  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/baa80225-fe90-42a5-b9ea-3652e411ec7f.jpg', label: 'Щебень терракот', sub: 'Щебень' },
 ];
 
 interface GallerySectionProps {
