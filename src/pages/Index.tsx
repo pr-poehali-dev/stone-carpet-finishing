@@ -351,7 +351,6 @@ const Index = () => {
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                   style={{ background: 'linear-gradient(to top, rgba(26,22,18,0.95) 0%, rgba(26,22,18,0.3) 60%, transparent 100%)' }} />
                 <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-3 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-                  <h3 className="font-oswald font-semibold text-white text-xl">{item.label}</h3>
                   <p className="font-golos text-sm mt-1" style={{ color: 'rgba(255,255,255,0.6)' }}>{item.sub}</p>
                 </div>
                 <div className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
