@@ -6,6 +6,11 @@ const galleryItems = [
   { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/f3fc68e6-9d2e-435b-9b64-c34b2723d6d0.jpg', label: 'Галька', sub: 'Галька' },
   { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/e6621930-7081-4ed4-ab7b-4137183b5c9d.jpg', label: 'Кварцит', sub: 'Кварцит' },
   { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/71d37538-065b-4dab-9506-81147443c518.jpg', label: 'Гранит', sub: 'Гранит' },
+  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/abc8bf34-aa05-4e55-8f96-d158bcc6bb26.jpg', label: 'Мрамор', sub: 'Мрамор' },
+  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/67fa3990-5139-479f-a249-d527f2634bc5.jpg', label: 'Яшма', sub: 'Яшма' },
+  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/95669c90-18e9-4170-9226-da1984485f47.jpg', label: 'Галька', sub: 'Галька' },
+  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/754a094e-3c0e-4f5f-9270-014e0d3110f8.jpg', label: 'Яшма', sub: 'Яшма' },
+  { img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/21673b8d-9128-4b8b-8580-6109b4c44d58.jpg', label: 'Гранит', sub: 'Гранит' },
 ];
 
 interface GallerySectionProps {
