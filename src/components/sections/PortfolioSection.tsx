@@ -12,6 +12,9 @@ const portfolioItems = [
   { id: 9, title: 'Ступени с алюминиевым профилем', area: '15 м²', material: 'Резиновая крошка', img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/5c8bd888-3079-4fbf-9a7e-d9c4662a706a.jpg', span: '' },
   { id: 10, title: 'Пол на кухне', area: '22 м²', material: 'Резиновая крошка', img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/84f0779a-1ecc-4c2e-a316-13f87d0eabe9.png', span: 'col-span-2' },
   { id: 11, title: 'Широкое крыльцо', area: '30 м²', material: 'Мраморная крошка', img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/51f503e0-6869-4576-a6cf-7610630945b8.jpg', span: '' },
+  { id: 12, title: 'Крыльцо с отмосткой', area: '28 м²', material: 'Тёмный гранит + галька', img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/ae4c0ce5-2572-4659-9f0c-afadb2b04c71.jpg', span: 'col-span-2' },
+  { id: 13, title: 'Ступени у фасада', area: '16 м²', material: 'Тёмный гранит', img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/5ca5851a-1853-4bd9-b2fb-030fd2be4949.jpg', span: '' },
+  { id: 14, title: 'Бордюр и площадка', area: '55 м²', material: 'Серый гранит', img: 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/c063817c-3a03-41ba-81c3-6614cd52958e.jpg', span: '' },
 ];
 
 export default function PortfolioSection() {
