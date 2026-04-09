@@ -74,7 +74,12 @@ const Index = () => {
             ))}
           </div>
 
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center gap-3">
+            <a href="https://t.me/Coverstone" target="_blank" rel="noopener noreferrer"
+              className="w-9 h-9 flex items-center justify-center transition-all hover:opacity-70"
+              style={{ border: '1px solid rgba(201,169,110,0.3)', borderRadius: '2px' }}>
+              <Icon name="Send" size={15} style={{ color: 'var(--gold)' }} />
+            </a>
             <button onClick={() => scrollTo('contacts')}
               className="font-oswald text-xs tracking-widest uppercase px-5 py-2.5 transition-all hover:opacity-80"
               style={{ background: 'var(--gold)', color: 'var(--dark)', borderRadius: '2px' }}>
@@ -98,6 +103,12 @@ const Index = () => {
                 {l.label}
               </button>
             ))}
+            <a href="https://t.me/Coverstone" target="_blank" rel="noopener noreferrer"
+              className="font-golos text-sm py-1 flex items-center gap-2 transition-opacity hover:opacity-70"
+              style={{ color: 'var(--gold)' }}>
+              <Icon name="Send" size={15} style={{ color: 'var(--gold)' }} />
+              Telegram @Coverstone
+            </a>
             <button onClick={() => scrollTo('contacts')}
               className="font-oswald text-xs tracking-widest uppercase px-5 py-2.5 text-center mt-2"
               style={{ background: 'var(--gold)', color: 'var(--dark)', borderRadius: '2px' }}>
