@@ -47,6 +47,7 @@ export default function ContactsSection({ scrollTo }: ContactsSectionProps) {
                   { icon: 'Phone', label: 'Телефон', value: '+7 (937) 225-17-59', sub: 'Дмитрий' },
                   { icon: 'Mail', label: 'Email', value: 'stroyvsaratov@yandex.ru' },
                   { icon: 'MapPin', label: 'Офис', value: 'улица Красная, 124, Краснодар' },
+                  { icon: 'Send', label: 'Telegram', value: '@Coverstone', link: 'https://t.me/Coverstone' },
                   { icon: 'Clock', label: 'Режим работы', value: 'Пн–Сб, 9:00–19:00' },
                 ].map((c, i) => (
                   <div key={i} className="flex items-start gap-4">
@@ -56,7 +57,9 @@ export default function ContactsSection({ scrollTo }: ContactsSectionProps) {
                     </div>
                     <div>
                       <p className="font-golos text-xs uppercase tracking-wider mb-0.5" style={{ color: 'rgba(26,22,18,0.4)' }}>{c.label}</p>
-                      <p className="font-golos font-medium" style={{ color: 'var(--dark)' }}>{c.value}</p>
+                      {'link' in c && c.link
+                        ? <a href={c.link} target="_blank" rel="noopener noreferrer" className="font-golos font-medium hover:opacity-70 transition-opacity" style={{ color: 'var(--terra)' }}>{c.value}</a>
+                        : <p className="font-golos font-medium" style={{ color: 'var(--dark)' }}>{c.value}</p>}
                       {'sub' in c && c.sub && <p className="font-golos text-sm mt-0.5" style={{ color: 'rgba(26,22,18,0.5)' }}>{c.sub}</p>}
                     </div>
                   </div>
