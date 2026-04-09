@@ -206,6 +206,13 @@ export default function ContactsSection({ scrollTo }: ContactsSectionProps) {
                         </div>
                       )}
 
+                      <a href="https://t.me/Coverstone" target="_blank" rel="noopener noreferrer"
+                        className="w-full flex items-center justify-center gap-2 py-3.5 font-oswald font-medium tracking-widest uppercase text-sm transition-all hover:opacity-80"
+                        style={{ border: '1px solid rgba(201,169,110,0.35)', color: 'var(--gold)', borderRadius: '4px' }}>
+                        <Icon name="Send" size={15} style={{ color: 'var(--gold)' }} />
+                        Написать в Telegram
+                      </a>
+
                       <div className="flex gap-3">
                         <button onClick={() => setFormStep(1)}
                           className="px-5 py-3.5 font-golos text-sm transition-colors"
