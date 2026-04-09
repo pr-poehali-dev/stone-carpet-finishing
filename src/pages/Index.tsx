@@ -123,12 +123,20 @@ const Index = () => {
       <GallerySection scrollTo={scrollTo} />
       <ContactsSection scrollTo={scrollTo} />
 
-      <a href="https://t.me/Coverstone" target="_blank" rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-50 w-14 h-14 flex items-center justify-center shadow-lg transition-all hover:scale-110 active:scale-95"
-        style={{ background: '#29A8EB', borderRadius: '50%' }}
-        title="Написать в Telegram">
-        <Icon name="Send" size={22} style={{ color: '#fff' }} />
-      </a>
+      <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <a href="https://max.ru/u/f9LHodD0cOLkdJfv8KZRwWbRcFYrfq6zxPqTesABJnqEAe0vrjnok_bOWec" target="_blank" rel="noopener noreferrer"
+          className="w-14 h-14 flex items-center justify-center shadow-lg transition-all hover:scale-110 active:scale-95 overflow-hidden"
+          style={{ borderRadius: '50%' }}
+          title="Написать в Max">
+          <img src="https://max.ru/favicon.ico" alt="Max" className="w-14 h-14 object-cover" onError={e => { (e.target as HTMLImageElement).src = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><rect width="48" height="48" rx="24" fill="%23FF6B35"/><text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-size="22" font-weight="bold" fill="white" font-family="Arial">M</text></svg>'; }} />
+        </a>
+        <a href="https://t.me/Coverstone" target="_blank" rel="noopener noreferrer"
+          className="w-14 h-14 flex items-center justify-center shadow-lg transition-all hover:scale-110 active:scale-95"
+          style={{ background: '#29A8EB', borderRadius: '50%' }}
+          title="Написать в Telegram">
+          <Icon name="Send" size={22} style={{ color: '#fff' }} />
+        </a>
+      </div>
     </div>
   );
 };
