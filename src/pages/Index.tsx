@@ -122,6 +122,13 @@ const Index = () => {
       <PortfolioSection />
       <GallerySection scrollTo={scrollTo} />
       <ContactsSection scrollTo={scrollTo} />
+
+      <a href="https://t.me/Coverstone" target="_blank" rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 w-14 h-14 flex items-center justify-center shadow-lg transition-all hover:scale-110 active:scale-95"
+        style={{ background: '#29A8EB', borderRadius: '50%' }}
+        title="Написать в Telegram">
+        <Icon name="Send" size={22} style={{ color: '#fff' }} />
+      </a>
     </div>
   );
 };
