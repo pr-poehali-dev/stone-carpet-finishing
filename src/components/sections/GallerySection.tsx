@@ -52,7 +52,7 @@ export default function GallerySection({ scrollTo }: GallerySectionProps) {
           <div className="grid grid-cols-5 gap-2.5" style={{ height: '280px' }}>
             <div className="col-span-2 reveal group relative overflow-hidden cursor-pointer" style={{ borderRadius: '8px' }}
               onMouseEnter={() => setActive(0)} onMouseLeave={() => setActive(null)}>
-              <img src={galleryItems[0].img} alt={galleryItems[0].label} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <img src={galleryItems[0].img} alt={galleryItems[0].label} loading="lazy" decoding="async" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 style={{ background: 'linear-gradient(to top, rgba(26,22,18,0.9) 0%, transparent 60%)' }} />
               <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
@@ -68,7 +68,7 @@ export default function GallerySection({ scrollTo }: GallerySectionProps) {
 
             <div className="col-span-1 reveal group relative overflow-hidden cursor-pointer" style={{ borderRadius: '8px' }}
               onMouseEnter={() => setActive(1)} onMouseLeave={() => setActive(null)}>
-              <img src={galleryItems[1].img} alt={galleryItems[1].label} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <img src={galleryItems[1].img} alt={galleryItems[1].label} loading="lazy" decoding="async" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 style={{ background: 'linear-gradient(to top, rgba(26,22,18,0.9) 0%, transparent 60%)' }} />
               <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
@@ -78,7 +78,7 @@ export default function GallerySection({ scrollTo }: GallerySectionProps) {
 
             <div className="col-span-2 reveal group relative overflow-hidden cursor-pointer" style={{ borderRadius: '8px' }}
               onMouseEnter={() => setActive(2)} onMouseLeave={() => setActive(null)}>
-              <img src={galleryItems[2].img} alt={galleryItems[2].label} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <img src={galleryItems[2].img} alt={galleryItems[2].label} loading="lazy" decoding="async" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 style={{ background: 'linear-gradient(to top, rgba(26,22,18,0.9) 0%, transparent 60%)' }} />
               <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
@@ -101,6 +101,8 @@ export default function GallerySection({ scrollTo }: GallerySectionProps) {
                 <img
                   src={item.img}
                   alt={item.label}
+                  loading="lazy"
+                  decoding="async"
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"

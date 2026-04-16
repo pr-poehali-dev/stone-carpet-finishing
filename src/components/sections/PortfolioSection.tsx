@@ -54,6 +54,8 @@ export default function PortfolioSection() {
               <img
                 src={item.img}
                 alt={item.title}
+                loading="lazy"
+                decoding="async"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 style={{ filter: hoveredId === item.id ? 'brightness(0.8)' : 'brightness(1)' }}
               />

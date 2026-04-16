@@ -48,7 +48,7 @@ export default function HeroSection({ scrollTo }: HeroSectionProps) {
                 'https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/67fa3990-5139-479f-a249-d527f2634bc5.jpg',
               ].map((src, i) => (
                 <div key={i} className="overflow-hidden">
-                  <img src={src} alt="" className="w-full h-full object-cover" style={{ filter: 'saturate(0.7)' }} />
+                  <img src={src} alt="" loading="lazy" decoding="async" className="w-full h-full object-cover" style={{ filter: 'saturate(0.7)' }} />
                 </div>
               ))}
             </div>

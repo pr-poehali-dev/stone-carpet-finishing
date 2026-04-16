@@ -1,9 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://stone-carpet-finishing.poehali.dev/</loc>
-    <lastmod>2026-04-05</lastmod>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/e4381f1f-af60-44b6-8e31-a1b97beef331.jpg</image:loc>
+      <image:title>Обрамление бассейна — каменный ковёр, мраморная крошка, Краснодар</image:title>
+      <image:caption>Покрытие бассейна каменным ковром из мраморной крошки, 32 м²</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/ecb47df4-f238-47c6-a746-fd3bc98aab03.jpg</image:loc>
+      <image:title>Отмостка дома из натурального камня — серый гранит, Краснодар</image:title>
+      <image:caption>Отмостка дома из серого гранита, 48 м²</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/2d89b172-e7fb-4198-b27a-98f6f5b47924.jpg</image:loc>
+      <image:title>Крыльцо и ступени из натурального камня — тёмный базальт</image:title>
+      <image:caption>Крыльцо и ступени из тёмного базальта, 12 м²</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/b87a4234-faa1-49d7-bb2e-67e61e3fd155.jpg</image:loc>
+      <image:title>Цоколь здания из кварцита — каменный ковёр Краснодар</image:title>
+      <image:caption>Цоколь здания из кварцита микс, 60 м²</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/7c5a8a6d-374b-4a7c-a71b-aa0a12df4d7e.jpg</image:loc>
+      <image:title>Терраса под навесом из речной гальки — каменный ковёр</image:title>
+      <image:caption>Терраса под навесом из речной гальки, 85 м²</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/f0e90815-c5a9-4f28-8c36-88c378b4529c.jpg</image:loc>
+      <image:title>Крыльцо с мраморной крошкой — покрытие из натурального камня</image:title>
+      <image:caption>Крыльцо с мраморной крошкой, 18 м²</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/ae4c0ce5-2572-4659-9f0c-afadb2b04c71.jpg</image:loc>
+      <image:title>Крыльцо с отмосткой — тёмный гранит и галька, Краснодар</image:title>
+      <image:caption>Крыльцо с отмосткой из тёмного гранита и гальки, 28 м²</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/5a720f68-4850-4556-915c-eb8c6bae78fc.jpg</image:loc>
+      <image:title>Мрамор — материал для каменного ковра</image:title>
+      <image:caption>Мрамор — натуральный камень для покрытий</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/3da74af8-bdcb-47e9-bbf6-5aa7591a0f7e.jpg</image:loc>
+      <image:title>Змеевик — натуральный камень для покрытий в Краснодаре</image:title>
+      <image:caption>Змеевик — уникальный натуральный камень</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/f3fc68e6-9d2e-435b-9b64-c34b2723d6d0.jpg</image:loc>
+      <image:title>Галька — покрытие из речного и морского камня</image:title>
+      <image:caption>Галька — природный материал для каменного ковра</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/71d37538-065b-4dab-9506-81147443c518.jpg</image:loc>
+      <image:title>Гранит — прочное покрытие из натурального камня</image:title>
+      <image:caption>Гранит для отмосток, ступеней и террас</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.poehali.dev/projects/2712c1ce-a040-4c98-8236-b6a704c80843/bucket/67fa3990-5139-479f-a249-d527f2634bc5.jpg</image:loc>
+      <image:title>Яшма — редкий декоративный камень для покрытий</image:title>
+      <image:caption>Яшма — эксклюзивный материал для каменного ковра</image:caption>
+    </image:image>
   </url>
 </urlset>
