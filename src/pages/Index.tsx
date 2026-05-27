@@ -3,6 +3,9 @@ import Icon from '@/components/ui/icon';
 import HeroSection from '@/components/sections/HeroSection';
 import PortfolioSection from '@/components/sections/PortfolioSection';
 import GallerySection from '@/components/sections/GallerySection';
+import SeoSection from '@/components/sections/SeoSection';
+import ReviewsSection from '@/components/sections/ReviewsSection';
+import FaqSection from '@/components/sections/FaqSection';
 import ContactsSection from '@/components/sections/ContactsSection';
 
 function useReveal() {
@@ -30,7 +33,7 @@ const Index = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'portfolio', 'gallery', 'contacts'];
+      const sections = ['home', 'portfolio', 'gallery', 'reviews', 'faq', 'contacts'];
       for (const id of [...sections].reverse()) {
         const el = document.getElementById(id);
         if (el && window.scrollY >= el.offsetTop - 120) {
@@ -47,6 +50,8 @@ const Index = () => {
     { id: 'home', label: 'Главная' },
     { id: 'portfolio', label: 'Портфолио' },
     { id: 'gallery', label: 'Галерея' },
+    { id: 'reviews', label: 'Отзывы' },
+    { id: 'faq', label: 'Вопросы' },
     { id: 'contacts', label: 'Контакты' },
   ];
 
@@ -121,6 +126,9 @@ const Index = () => {
       <HeroSection scrollTo={scrollTo} />
       <PortfolioSection />
       <GallerySection scrollTo={scrollTo} />
+      <SeoSection />
+      <ReviewsSection />
+      <FaqSection />
       <ContactsSection scrollTo={scrollTo} />
 
       <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
