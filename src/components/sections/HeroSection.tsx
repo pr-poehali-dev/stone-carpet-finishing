@@ -66,18 +66,15 @@ export default function HeroSection({ scrollTo }: HeroSectionProps) {
             </div>
 
             <div className="animate-fade-up" style={{ animationDelay: '0.25s', opacity: 0 }}>
-              <h1 className="font-oswald font-bold text-white leading-[0.9] mb-2" style={{ fontSize: 'clamp(3.5rem, 9vw, 8rem)', letterSpacing: '-0.03em' }}>
-                КАМЕННЫЙ
-              </h1>
-              <h1 className="font-oswald font-bold leading-[0.9] mb-8" style={{
-                fontSize: 'clamp(3.5rem, 9vw, 8rem)',
-                letterSpacing: '-0.03em',
-                background: 'linear-gradient(135deg, var(--gold) 0%, #e8c87a 40%, #a07840 100%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-              }}>
-                КОВЁР
+              <h1 className="font-oswald font-bold leading-[0.9] mb-8" style={{ fontSize: 'clamp(3.5rem, 9vw, 8rem)', letterSpacing: '-0.03em' }}>
+                <span className="text-white block mb-2">КАМЕННЫЙ</span>
+                <span style={{
+                  display: 'block',
+                  background: 'linear-gradient(135deg, var(--gold) 0%, #e8c87a 40%, #a07840 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                }}>КОВЁР</span>
               </h1>
             </div>
 
