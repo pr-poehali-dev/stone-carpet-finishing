@@ -17,5 +17,5 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
-Sitemap: https://ккк-ковер.рф/sitemap.xml
-Host: ккк-ковер.рф
+Sitemap: https://xn----7sbabe7bifhv0bp7d.xn--p1ai/sitemap.xml
+Host: https://xn----7sbabe7bifhv0bp7d.xn--p1ai
