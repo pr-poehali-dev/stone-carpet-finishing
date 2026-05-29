@@ -20,6 +20,23 @@ const services = [
 
 const cities = ['Краснодар', 'Сочи', 'Анапа', 'Новороссийск', 'Геленджик', 'Армавир', 'Туапсе', 'Ейск'];
 
+const prices = [
+  { name: 'Мраморная крошка', price: 'от 2 800 ₽/м²', note: 'крыльцо, терраса, интерьер' },
+  { name: 'Речная галька', price: 'от 3 200 ₽/м²', note: 'зоны у бассейна, дорожки' },
+  { name: 'Гранитная крошка', price: 'от 3 500 ₽/м²', note: 'отмостки, цоколи' },
+  { name: 'Кварцит / змеевик', price: 'от 3 900 ₽/м²', note: 'фасады, премиум-объекты' },
+  { name: 'Яшма (эксклюзив)', price: 'от 4 500 ₽/м²', note: 'дизайн-проекты' },
+  { name: 'Замер и расчёт', price: 'бесплатно', note: 'выезд по Краснодару' },
+];
+
+const steps = [
+  { n: '01', title: 'Заявка и замер', desc: 'Принимаем заявку, бесплатно выезжаем на объект, замеряем площадь и считаем точную смету.' },
+  { n: '02', title: 'Договор и материалы', desc: 'Заключаем договор с фиксированной ценой и гарантией. Подбираем камень под ваш интерьер.' },
+  { n: '03', title: 'Подготовка основания', desc: 'Готовим и грунтуем поверхность — это влияет на срок службы покрытия.' },
+  { n: '04', title: 'Укладка каменного ковра', desc: 'Наносим смесь камня с полиуретаном вручную, выравниваем бесшовное покрытие.' },
+  { n: '05', title: 'Сдача и гарантия', desc: 'Через сутки покрытие готово к нагрузке. Выдаём гарантию по договору до 25 лет.' },
+];
+
 export default function SeoSection() {
   return (
     <section id="about-stone" className="section-pad" style={{ background: 'var(--light)' }}>
@@ -91,6 +108,51 @@ export default function SeoSection() {
                     {s.desc}
                   </p>
                 </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Цены */}
+        <div className="reveal mb-16">
+          <h3 className="font-oswald font-bold mb-3 uppercase" style={{ fontSize: '1.75rem', color: 'var(--dark)' }}>
+            Цены на каменный ковёр в Краснодаре
+          </h3>
+          <p className="font-golos text-sm leading-relaxed mb-8 max-w-2xl" style={{ color: 'rgba(26,22,18,0.6)' }}>
+            Стоимость зависит от вида камня, площади и сложности объекта. Указаны цены под ключ с материалом и работой. Точную смету рассчитываем бесплатно после замера.
+          </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {prices.map((p, i) => (
+              <div key={i} className="p-5 flex items-center justify-between gap-4" style={{ background: '#fff', border: '1px solid rgba(26,22,18,0.06)', borderRadius: '6px' }}>
+                <div>
+                  <h4 className="font-oswald font-semibold text-base uppercase tracking-wide" style={{ color: 'var(--dark)' }}>
+                    {p.name}
+                  </h4>
+                  <p className="font-golos text-xs mt-1" style={{ color: 'rgba(26,22,18,0.5)' }}>{p.note}</p>
+                </div>
+                <span className="font-oswald font-bold text-base whitespace-nowrap" style={{ color: 'var(--terra)' }}>
+                  {p.price}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Этапы работ */}
+        <div className="reveal mb-16">
+          <h3 className="font-oswald font-bold mb-8 uppercase" style={{ fontSize: '1.75rem', color: 'var(--dark)' }}>
+            Как мы работаем — этапы укладки
+          </h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {steps.map((s, i) => (
+              <div key={i} className="p-5" style={{ background: '#fff', border: '1px solid rgba(26,22,18,0.06)', borderRadius: '6px' }}>
+                <div className="font-oswald font-bold text-2xl mb-2" style={{ color: 'var(--gold)' }}>{s.n}</div>
+                <h4 className="font-oswald font-semibold text-base uppercase tracking-wide mb-1" style={{ color: 'var(--dark)' }}>
+                  {s.title}
+                </h4>
+                <p className="font-golos text-sm leading-relaxed" style={{ color: 'rgba(26,22,18,0.6)' }}>
+                  {s.desc}
+                </p>
               </div>
             ))}
           </div>
