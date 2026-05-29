@@ -126,7 +126,7 @@ const Index = () => {
       <HeroSection scrollTo={scrollTo} />
       <PortfolioSection />
       <GallerySection scrollTo={scrollTo} />
-      <SeoSection />
+      <SeoSection scrollTo={scrollTo} />
       <ReviewsSection />
       <FaqSection />
       <ContactsSection scrollTo={scrollTo} />

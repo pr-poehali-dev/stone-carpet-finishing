@@ -37,7 +37,11 @@ const steps = [
   { n: '05', title: 'Сдача и гарантия', desc: 'Через сутки покрытие готово к нагрузке. Выдаём гарантию по договору до 25 лет.' },
 ];
 
-export default function SeoSection() {
+interface SeoSectionProps {
+  scrollTo: (id: string) => void;
+}
+
+export default function SeoSection({ scrollTo }: SeoSectionProps) {
   return (
     <section id="about-stone" className="section-pad" style={{ background: 'var(--light)' }}>
       <div className="max-w-7xl mx-auto px-6">
@@ -135,6 +139,22 @@ export default function SeoSection() {
                 </span>
               </div>
             ))}
+          </div>
+          <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4 p-6" style={{ background: 'rgba(184,92,56,0.06)', border: '1px solid rgba(184,92,56,0.15)', borderRadius: '8px' }}>
+            <div className="flex-1">
+              <p className="font-oswald font-semibold text-lg uppercase tracking-wide" style={{ color: 'var(--dark)' }}>
+                Узнайте точную стоимость вашего объекта
+              </p>
+              <p className="font-golos text-sm mt-1" style={{ color: 'rgba(26,22,18,0.6)' }}>
+                Замер и расчёт сметы — бесплатно. Перезвоним в течение 30 минут.
+              </p>
+            </div>
+            <button onClick={() => scrollTo('contacts')}
+              className="font-oswald text-sm tracking-widest uppercase px-7 py-3.5 transition-all hover:opacity-85 whitespace-nowrap flex items-center gap-2"
+              style={{ background: 'var(--terra)', color: '#fff', borderRadius: '4px' }}>
+              <Icon name="Calculator" size={18} style={{ color: '#fff' }} />
+              Рассчитать стоимость
+            </button>
           </div>
         </div>
 
