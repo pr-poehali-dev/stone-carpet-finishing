@@ -131,7 +131,24 @@ const Index = () => {
       <FaqSection />
       <ContactsSection scrollTo={scrollTo} />
 
-      <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+      {/* Мобильная панель «Позвонить / Заявка» */}
+      <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 flex gap-2 p-3"
+        style={{ background: 'rgba(26,22,18,0.97)', backdropFilter: 'blur(12px)', borderTop: '1px solid rgba(201,169,110,0.15)' }}>
+        <a href="tel:+79648477501"
+          className="flex-1 flex items-center justify-center gap-2 font-oswald text-sm tracking-wider uppercase py-3.5"
+          style={{ border: '1px solid rgba(201,169,110,0.4)', color: 'var(--gold)', borderRadius: '4px' }}>
+          <Icon name="Phone" size={17} style={{ color: 'var(--gold)' }} />
+          Позвонить
+        </a>
+        <button onClick={() => scrollTo('contacts')}
+          className="flex-1 flex items-center justify-center gap-2 font-oswald text-sm tracking-wider uppercase py-3.5"
+          style={{ background: 'var(--gold)', color: 'var(--dark)', borderRadius: '4px' }}>
+          <Icon name="Calculator" size={17} style={{ color: 'var(--dark)' }} />
+          Заявка
+        </button>
+      </div>
+
+      <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3 max-md:bottom-24">
         <a href="https://max.ru/u/f9LHodD0cOLkdJfv8KZRwWbRcFYrfq6zxPqTesABJnqEAe0vrjnok_bOWec" target="_blank" rel="noopener noreferrer"
           className="w-14 h-14 flex items-center justify-center shadow-lg transition-all hover:scale-110 active:scale-95 overflow-hidden"
           style={{ borderRadius: '50%' }}
